@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Libre Barcode 39' rel='stylesheet'>
+    <title>Document</title>
+<style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+header,main,footer{
+    width: 80%;
+    margin: auto;
+}
+header{
+    border-bottom: 3px solid #000;
+}
+header>h1, header >p{
+    text-align: center;
+    margin: 0.8rem 0;
+}
+main > .header-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 3px solid #000;
+    padding: 5px 10px;
+}
+td:first-child, td:nth-last-child(3){
+    text-align: center;
+}
+td:nth-last-child(1), td:nth-last-child(2), .table-footer>th:nth-last-child(1){
+    text-align: right;
+}
+.table-footer >th:first-child{
+    border: none;
+    text-align: right;
+}
+.barcode{
+    font-family: 'Libre Barcode 39';font-size: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.main-barcode > p{
+    text-align: center;
+}
+.main-footer{
+    width: 100%;
+    margin: 3.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.main-footer > div {
+    border-top: 3px dashed #000;  
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Total</h1>
+        <p>អាស័យដ្ឋាន​ ៖</p>
+        <p>លេខទូរសព្ទ​ ៖</p>
+    </header>
+    <main>
+        <div class="header-main">
+            <div>
+                <p>អត្រា​ 1$ = 4,100</p>
+                <p>អតិថិជន : ទូទៅ</p>   
+            </div>
+            <div>
+                <P>វិក្តយបត្រ</P>
+                <p>Invoice</p>
+            </div>
+            <div>
+                <p>លេខរៀងវិក្កយបត្រ : 00000018</p>
+                <p>កាលបរិច្ឆេទ : 19-02-2024 10:44</p>
+            </div>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>ល.រ<br>No.</th>
+                    <th>ឈ្មោះទំនិញ<br> Name of Goods</th>
+                    <th>ចំនួន​<br>Quantity</th>
+                    <th>តម្លៃរាយ<br>Unit Price</th>
+                    <th>តម្លៃសរុប<br>Amount</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>5W-30 Gasoline 4L</td>
+                    <td>1.00</td>
+                    <td>$52.70</td>
+                    <td>$52.70</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>20W-50 Gasoline 4L</td>
+                    <td>1.00</td>
+                    <td>$25.00</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>សំបុកអែ PRUS 101-170801-37020</td>
+                    <td>1.00</td>
+                    <td>$7.00</td>
+                    <td>$18.00</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>សំបុកអែ LUXES 57-17801-38030</td>
+                    <td>1.00</td>
+                    <td>$18.00</td>
+                    <td>$8.00</td>
+                </tr>
+                <tr class="table-footer">
+                    <th colspan="4">សរុបរួម/Grand Total ($)</th>
+                    <th>$109.70</th>
+                </tr>
+                <tr class="table-footer">
+                    <th colspan="4" >សរុបរួម/Grand Total (៛)</th>
+                    <th>៛449,770,00</th>
+                </tr>                
+            </table>
+            <div class="main-barcode">
+                <span class="barcode">BarCode</span>
+                <p>18</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div>
+                <p>ហត្ថលេខា និងឈ្មោះអ្នកទិញ</p>
+                <p>Customer's Signature & Name</p>
+            </div>
+            <div>
+                <p>ហត្ថលេខា និងឈ្មោះអ្នកលក់</p>
+                <p>Seller's Signature & Name</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
